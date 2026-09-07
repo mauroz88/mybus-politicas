@@ -1,0 +1,61 @@
+# Política de Privacidad de MyBus
+
+Última actualización: 7 de septiembre de 2026
+
+En **MyBus**, respetamos su privacidad y nos comprometemos a proteger la información personal que pueda compartirse a través de nuestra aplicación móvil. Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos la información cuando utiliza nuestro servicio.
+
+---
+
+### 1. Información que Recopilamos
+
+#### a. Información proporcionada por el usuario
+MyBus no requiere el registro de una cuenta de usuario ni solicita información de identificación personal (como nombre, dirección de correo electrónico o número de teléfono) para acceder a las funcionalidades básicas de consulta de líneas y horarios de transporte público.
+
+#### b. Información recopilada automáticamente y Tecnologías de Terceros
+La aplicación puede utilizar servicios de terceros que recopilan información utilizada para identificarlo de forma anónima con fines analíticos y de monetización:
+
+* **Google AdMob (Publicidad):** Utilizamos Google AdMob para mostrar anuncios dentro de la aplicación. AdMob puede recopilar y utilizar datos como el identificador de publicidad de su dispositivo (Advertising ID), dirección IP e interacciones con los anuncios para mostrar publicidad personalizada o no personalizada.
+* **Google Play Services:** Requerido para el correcto funcionamiento de las características base de Android y distribución de la app.
+
+---
+
+### 2. Uso de la Información
+
+La información recopilada se utiliza exclusivamente para:
+* Proporcionar, mantener y mejorar las funcionalidades y el rendimiento de la aplicación.
+* Mostrar anuncios publicitarios a través de la red de Google AdMob.
+* Analizar de forma anónima métricas de uso y errores técnicos para optimizar la experiencia del usuario.
+
+---
+
+### 3. Permisos del Dispositivo
+
+MyBus puede solicitar los siguientes permisos en su dispositivo:
+* **Acceso a Red / Internet:** Necesario para descargar actualizaciones de datos de líneas, avisos y cargar anuncios publicitarios.
+* **Ubicación (Opcional):** Si la función está habilitada, la app puede requerir su ubicación aproximada o precisa únicamente para mostrarle las paradas o líneas de colectivo más cercanas. Su ubicación no se almacena en nuestros servidores ni se vende a terceros.
+
+---
+
+### 4. Enlaces y Servicios de Terceros
+
+La aplicación puede contener enlaces o servicios integrados provistos por terceros (como Google AdMob). No nos hacemos responsables por las prácticas de privacidad o contenidos de dichos sitios o servicios externos. Le recomendamos revisar las políticas de privacidad de cada proveedor:
+* [Política de privacidad de Google y AdMob](https://policies.google.com/privacy)
+
+---
+
+### 5. Privacidad de los Niños
+
+Nuestros servicios no están dirigidos a niños menores de 13 años (o según determine la legislación local). No recopilamos a sabiendas información de identificación personal de menores.
+
+---
+
+### 6. Cambios en esta Política de Privacidad
+
+Podemos actualizar nuestra Política de Privacidad periódicamente. Se le notificará de cualquier cambio publicando la nueva Política de Privacidad en esta sección. Le aconsejamos revisar esta página periódicamente para detectar cualquier cambio.
+
+---
+
+### 7. Contacto
+
+Si tiene alguna pregunta o sugerencia sobre nuestra Política de Privacidad, no dude en contactarnos a través de:
+* **Correo electrónico de soporte:** [TU_CORREO_DE_SOPORTE@GMAIL.COM]
