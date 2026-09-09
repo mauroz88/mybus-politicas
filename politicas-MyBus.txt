@@ -1,61 +1,114 @@
 # Política de Privacidad de MyBus
 
-Última actualización: 7 de septiembre de 2026
+Última actualización: 9 de septiembre de 2026
 
-En **MyBus**, respetamos su privacidad y nos comprometemos a proteger la información personal que pueda compartirse a través de nuestra aplicación móvil. Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos la información cuando utiliza nuestro servicio.
+MyBus (“la app”) es una aplicación móvil colaborativa para ver una ubicación aproximada de colectivos a partir del GPS que comparten los pasajeros. **No es una aplicación oficial** del Estado nacional, de las provincias de Jujuy, Salta o Tucumán, ni de municipios ni empresas de transporte.
 
----
-
-### 1. Información que Recopilamos
-
-#### a. Información proporcionada por el usuario
-MyBus no requiere el registro de una cuenta de usuario ni solicita información de identificación personal (como nombre, dirección de correo electrónico o número de teléfono) para acceder a las funcionalidades básicas de consulta de líneas y horarios de transporte público.
-
-#### b. Información recopilada automáticamente y Tecnologías de Terceros
-La aplicación puede utilizar servicios de terceros que recopilan información utilizada para identificarlo de forma anónima con fines analíticos y de monetización:
-
-* **Google AdMob (Publicidad):** Utilizamos Google AdMob para mostrar anuncios dentro de la aplicación. AdMob puede recopilar y utilizar datos como el identificador de publicidad de su dispositivo (Advertising ID), dirección IP e interacciones con los anuncios para mostrar publicidad personalizada o no personalizada.
-* **Google Play Services:** Requerido para el correcto funcionamiento de las características base de Android y distribución de la app.
+Responsable del tratamiento: el desarrollador de MyBus (contacto al final).
 
 ---
 
-### 2. Uso de la Información
+## 1. Qué datos tratamos
 
-La información recopilada se utiliza exclusivamente para:
-* Proporcionar, mantener y mejorar las funcionalidades y el rendimiento de la aplicación.
-* Mostrar anuncios publicitarios a través de la red de Google AdMob.
-* Analizar de forma anónima métricas de uso y errores técnicos para optimizar la experiencia del usuario.
+### 1.1 Cuenta (Firebase Authentication)
+Para usar la app iniciás sesión. Según el método:
 
----
+- **Google:** nombre visible, correo y foto de perfil que Google nos entrega.
+- **Correo y contraseña** (si está habilitado): correo.
+- **Teléfono** (si está habilitado): número.
 
-### 3. Permisos del Dispositivo
+Firebase (Google) identifica tu sesión con un ID de usuario (UID).
 
-MyBus puede solicitar los siguientes permisos en su dispositivo:
-* **Acceso a Red / Internet:** Necesario para descargar actualizaciones de datos de líneas, avisos y cargar anuncios publicitarios.
-* **Ubicación (Opcional):** Si la función está habilitada, la app puede requerir su ubicación aproximada o precisa únicamente para mostrarle las paradas o líneas de colectivo más cercanas. Su ubicación no se almacena en nuestros servidores ni se vende a terceros.
+### 1.2 Ubicación (GPS)
+Con tu permiso, la app usa ubicación **precisa**:
 
----
+- Para centrar el mapa y estimar tu zona (provincia/ciudad).
+- **Solo si marcás “Subí al colectivo”:** se envía periódicamente latitud, longitud, hora, velocidad aproximada y (si lo informás) ocupación, a **Firebase Realtime Database**, asociadas a tu UID y a la línea elegida.
 
-### 4. Enlaces y Servicios de Terceros
+El resto de los usuarios **no ven tu nombre ni tu correo**. Ven un ícono de colectivo agrupado.
 
-La aplicación puede contener enlaces o servicios integrados provistos por terceros (como Google AdMob). No nos hacemos responsables por las prácticas de privacidad o contenidos de dichos sitios o servicios externos. Le recomendamos revisar las políticas de privacidad de cada proveedor:
-* [Política de privacidad de Google y AdMob](https://policies.google.com/privacy)
+Si marcás que te bajaste, o te alejás del grupo, se deja de publicar. Los puntos pueden quedar un tiempo breve en el servidor hasta que se borran o vencen.
 
----
+**Tu ubicación sí se procesa en servidores de Google (Firebase).** No se vende a anunciantes de listas. AdMob no recibe el recorrido del colectivo como tal.
 
-### 5. Privacidad de los Niños
+### 1.3 Uso de la app
+Línea elegida, si estás a bordo, alertas de proximidad, créditos Premium y preferencias se guardan en el dispositivo (`localStorage`) y, en parte, en Firebase.
 
-Nuestros servicios no están dirigidos a niños menores de 13 años (o según determine la legislación local). No recopilamos a sabiendas información de identificación personal de menores.
-
----
-
-### 6. Cambios en esta Política de Privacidad
-
-Podemos actualizar nuestra Política de Privacidad periódicamente. Se le notificará de cualquier cambio publicando la nueva Política de Privacidad en esta sección. Le aconsejamos revisar esta página periódicamente para detectar cualquier cambio.
+### 1.4 Publicidad y pagos (terceros)
+- **Google AdMob:** identificador de publicidad, IP, interacciones con anuncios (banners, interstitials, videos recompensados).
+- **Google Play Billing:** si pagás Premium, el cobro lo procesa Google. MyBus no recibe el número de tu tarjeta.
+- **Google Play Services / Capacitor:** funcionamiento de la app en Android.
 
 ---
 
-### 7. Contacto
+## 2. Para qué los usamos
 
-Si tiene alguna pregunta o sugerencia sobre nuestra Política de Privacidad, no dude en contactarnos a través de:
-* **Correo electrónico de soporte:** [TU_CORREO_DE_SOPORTE@GMAIL.COM]
+- Crear y mantener tu sesión.
+- Mostrar el mapa y la posición colaborativa de la línea.
+- Alertas de proximidad y ocupación informada por usuarios (no oficial).
+- Mostrar anuncios si no sos Premium; videos a cambio de créditos.
+- Activar Premium (Play o créditos).
+- Corregir errores y mejorar la app.
+
+No usamos tus datos para vender bases a terceros ajenos a estos servicios.
+
+---
+
+## 3. Permisos del dispositivo
+
+- **Internet:** mapa, login, Firebase, anuncios.
+- **Ubicación precisa / aproximada:** mapa y, si colaborás, publicación en la línea.
+- **Cuenta de Google / Play:** login y compras.
+
+Podés rechazar o revocar la ubicación en Ajustes de Android. Sin GPS, el mapa colaborativo no puede funcionar bien.
+
+---
+
+## 4. Conservación
+
+- Cuenta: mientras exista el usuario en Firebase Auth.
+- Pings de viaje: mientras el viaje está activo o un corto periodo de frescura (puntos viejos se descartan).
+- Premium/créditos en el teléfono: hasta que borres datos de la app.
+- Ads y Play: según las políticas de Google.
+
+---
+
+## 5. Terceros y enlaces
+
+- [Privacidad de Google](https://policies.google.com/privacy) (Firebase, AdMob, Play)
+- [Cómo usa Google los datos en apps](https://policies.google.com/technologies/partner-sites)
+
+MyBus no controla esas políticas.
+
+Fuentes oficiales de transporte (no operadas por MyBus):
+- https://www.jujuy.gob.ar
+- https://www.salta.gob.ar
+- https://www.tucuman.gob.ar
+
+---
+
+## 6. Menores
+
+La app no está dirigida a menores de 13 años (o la edad que fije la ley local). No buscamos recabar datos de menores a sabiendas.
+
+---
+
+## 7. Tus derechos
+
+Podés pedir acceso, corrección o baja de tu cuenta escribiendo al correo de contacto. También: cerrar sesión, borrar datos de la app y desinstalar. Google Play / tu cuenta de Google tienen controles de anuncios y de ubicación.
+
+---
+
+## 8. Cambios
+
+Si cambia esta política, actualizamos la fecha y el texto en esta página. El uso posterior implica que tomaste conocimiento de la versión vigente.
+
+---
+
+## 9. Contacto
+
+Correo de soporte: mauro.zenteno150988@gmail.com
+
+---
+
+MyBus es una ayuda entre pasajeros. No reemplaza información oficial de horarios, paradas ni recorridos.
